@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Tables - Web Development Info</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 50px;
+            font-family: Verdana, sans-serif;
+            background-color: #f0f8ff;
+        }
+
+        h2 {
+            color: #003366;
+        }
+
+        table {
+            border: 2px solid #003366;
+            margin: 20px auto;
+            width: 80%;
+            background-color: #ffffff;
+        }
+
+        table table {
+            border: 2px solid #ff8c00;
+            margin: 10px auto;
+            width: 90%;
+        }
+
+        td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #008080;
+            color: white;
+            padding: 10px;
+        }
+
+        .inner-table td {
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #20b2aa;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Web Development Resources</h2>
+    <p><b>Nested Tables for Web Development Tools and Info</b></p>
+
+    <table border="2">
+        <tr>
+            <td>
+                <b>Frontend Framework</b><br> React
+            </td>
+            <td>
+                <b>Framework Details</b><br>
+                <table border="2" class="inner-table">
+                    <tr>
+                        <td><b>Initial Release</b></td>
+                        <td>2013</td>
+                    </tr>
+                    <tr>
+                        <td><b>Language</b></td>
+                        <td>JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td><b>Developer</b></td>
+                        <td>Facebook</td>
+                    </tr>
+                    <tr>
+                        <td><b>License</b></td>
+                        <td>MIT</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Backend Platform</b><br> Node.js
+            </td>
+            <td>
+                <table border="2" class="inner-table">
+                    <tr class="header">
+                        <th>Feature</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Runtime</td>
+                        <td>Built on Chrome's V8 Engine</td>
+                    </tr>
+                    <tr>
+                        <td>Architecture</td>
+                        <td>Event-driven, non-blocking I/O</td>
+                    </tr>
+                    <tr>
+                        <td>Package Manager</td>
+                        <td>npm</td>
+                    </tr>
+                    <tr>
+                        <td>Platform</td>
+                        <td>Cross-platform</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Recent Trends</b>
+            </td>
+            <td>
+                <table border="2" class="inner-table">
+                    <tr>
+                        <td><b>Jamstack Adoption</b></td>
+                        <td>Rising</td>
+                    </tr>
+                    <tr>
+                        <td><b>Serverless Functions</b></td>
+                        <td>Increasing</td>
+                    </tr>
+                    <tr>
+                        <td><b>Static Site Generators</b></td>
+                        <td>Popular</td>
+                    </tr>
+                    <tr>
+                        <td><b>Modern CSS</b></td>
+                        <td>Using Flexbox & Grid</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
